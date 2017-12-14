@@ -191,6 +191,8 @@
                     </execution>
                 </executions>
             </plugin>
+            
+            <!--  플러그인은 영어다 ㅁㅁㅁㅁ-->
             <!--
             <plugin>
                 <groupId>com.google.code.maven-replacer-plugin</groupId>
