@@ -192,8 +192,6 @@
                 </executions>
             </plugin>
             
-            <!--  플러그인은 영어다 ㅁㅁㅁㅁ-->
-            <!--
             <plugin>
                 <groupId>com.google.code.maven-replacer-plugin</groupId>
                 <artifactId>replacer</artifactId>
@@ -215,7 +213,7 @@
                     <value>${project.version}</value>
                 </configuration>
             </plugin>
-            -->
+
             <plugin><!-- Using jdk 1.5.0_22, package-info.java files are compiled correctly. -->
                 <!--
                 java compiler plugin forked in extra process
@@ -261,15 +259,14 @@
                 </executions>
             </plugin>
             
-            <!--
-            <plugin>
-                
+            <plugin>    
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefireVersion}</version>
                 <configuration>
                     <test>org/junit/tests/AllTests.java</test>
                     <useSystemClassLoader>true</useSystemClassLoader>
                     <enableAssertions>false</enableAssertions>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -279,7 +276,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            -->
             
             <plugin>
                 <!--
